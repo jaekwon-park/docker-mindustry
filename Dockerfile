@@ -1,6 +1,6 @@
-FROM library/alpine:20210212
-RUN apk add --no-cache \
-    openjdk14-jre-headless=14.0.2_p12-r2
+FROM openjdk:14-jdk-alpine
+#RUN apk add --no-cache \
+#    openjdk14-jre-headless=14.0.2_p12-r2
 
 # App user
 ARG APP_USER="mindustry"
