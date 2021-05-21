@@ -1,4 +1,4 @@
-FROM openjdk:15-jdk-alpine
+FROM openjdk:14-jdk-alpine
 #RUN apk add --no-cache \
 #    openjdk14-jre-headless=14.0.2_p12-r2
 
