@@ -6,7 +6,7 @@ FROM openjdk:16.0.1-jdk-oracle
 ARG APP_USER="mindustry"
 ARG APP_UID=1368
 #RUN adduser --disabled-password --uid "$APP_UID" --no-create-home --gecos "$APP_USER" --shell /sbin/nologin "$APP_USER"
-RUN adduser --uid "$APP_UID" --no-create-home --gecos "$APP_USER" --shell /sbin/nologin "$APP_USER"
+RUN adduser --uid "$APP_UID" --no-create-home --shell /sbin/nologin "$APP_USER"
 
 # Server binary
 ARG APP_VERSION=126.2
